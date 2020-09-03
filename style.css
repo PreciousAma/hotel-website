@@ -7,7 +7,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-*, *::before, *::after {
+* {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -318,7 +318,6 @@ body {
     padding-top: 25rem;
     padding-bottom: 10rem;
     border: 1px solid red;
-
 }
 
 
@@ -454,14 +453,14 @@ body {
 
 .facilities-play .facilities-play-text {
     margin-left: 1rem;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .facilities-wrap .facilities-img-wrap::before,
 .facilities-wrap .facilities-img-wrap::after {
     content: "";
     display: block;
-    background-color: #FFFFFF;
+    background-color: blue;
     box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
     height: 40px;
     border-radius: 15px;
@@ -497,6 +496,8 @@ body {
 /* wellness and spa facilities */
 .wellness-and-spa-section {
     background-color: #FFFFFF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     /* padding-top: 10rem;
     padding-bottom: 5rem; */
 }
@@ -505,9 +506,275 @@ body {
     margin-bottom: 10rem;
 }
 
-.wellness-and-spa-star .icon {
+.wellness-and-spa-star .icon,
+.restaurants-and-bars-play .icon {
     background: linear-gradient(180deg, #7F95AE -91.68%, #E5E9EF 100%);
 }
+
+.restaurants-and-bars-section {
+    background-color: #EDF1F5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.restaurants-and-bars-img-wrap .restaurants-and-bars-card {
+    background-color: #2C4664; 
+}
+
+/* Advantages */
+.advantages-section {
+    background-color: #FFFFFF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.advantages-wrap .free-wifi-wrap {
+    align-items: center;
+    /* position: relative; */
+    border-radius: 30px;
+    display: flex;
+    height: 608px;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 522px;
+    padding: 3rem 3rem 0rem 3rem;
+    border: 1px solid green;
+}
+
+.advantages-wrapper .advantages-title {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px; 
+    text-align: center;
+    color: #333333;
+    padding-bottom: 5rem;
+}
+
+.img-wrap .advantages-img {
+    height: 320px;
+    /* max-width: 296px; */
+    /* padding-bottom: 2rem; */
+    border: 1px solid blue;
+}
+
+.img-wrap .advantages-icon {
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 3rem;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+
+.advantages-img .wifi-img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.advantages-texts .advantages-subtitle {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333333;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.advantages-texts .advantages-text,
+.advantages-group .advantages-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.501557);
+    padding-bottom: 3rem;
+}
+
+.advantages-group .advantages-events-wrap {
+    /* align-items: center; */
+    /* position: relative; */
+    border-radius: 30px;
+    display: flex;
+    height: 352px;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    flex-basis: 100%;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 572px;
+    padding: 3rem;
+    /* padding: 1rem 2rem 0rem 3rem; */
+    border: 1px solid green;
+    margin-top: 2rem; 
+}
+
+.advantages-wrap .advantages-group-icon {
+    align-self: flex-start;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 2rem;
+}
+
+.advantages-subgroup .advantages-group-icon-one {
+    background: #3F5E82;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.advantages-group .advantages-group-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.advantages-subgroup-wrap .advantages-subgroup {
+    border-radius: 30px;
+    display: flex;
+    height: 288px;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    flex-basis: 100%;
+    background: #EDF1F5;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);   
+    max-width: 346px;
+    padding: 3rem;
+    /* padding: 1rem 2rem 0rem 3rem; */
+    border: 1px solid green;
+    margin-top: 2rem; 
+}
+
+.advantages-subgroup-wrap .advantages-subgroup-two {
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Room Section */
+
+.rooms-section .rooms-wrap {
+    border: 1px solid red;
+}
+
+.rooms-wrap .room-wrap {
+}
+
+
+/* .room-wrap .room-img-wrap {
+    align-items: center;
+    border-radius: 30px; 
+    display: flex;
+    height: 576px;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 370px;
+    padding: 2rem 2rem 0rem 2rem;
+    position: relative;
+    margin-bottom: 3rem;
+    border: 1px solid red;
+} */
+
+
+/* .room-wrap .room-img-wrap::before,
+.room-wrap .room-img-wrap::after {
+    content: "";
+    display: block;
+    background-color: green;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: -2;   
+} */
+
+/* .room-wrap .room-img-wrap::after {
+    bottom: -15px;
+    width: 80%;
+} */
+
+/* .room-wrap .room-img-wrap::before {
+    bottom: -30px;
+    width: 70%;
+} */
+
+
+/* .facilities-wrap .room-img-wrap {
+    
+     margin-bottom: 3rem; 
+
+} */
+
+.img-wrap .room-img {
+    max-width: 322px;
+    height: 272px;
+    position: relative;
+}
+
+.room-img .roo {
+    width: 100%;
+    height: auto;
+}
+
+.img-wrap .room-icon {
+    /* background-color: green; */
+    padding: 1.7rem;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    background-color: #FFFFFF;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;                            /*align-self: flex-start; */
+    position: absolute;
+    max-width: 144px;
+    height: 64px;
+    top: 45px;
+    left: 45px;
+    z-index: 1;
+    /* padding: 2rem; */
+}
+
+.room-texts .room-subtitle {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.room-texts .room-btn {
+    background: #2C4664;
+    border-radius: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+
+
+}
+
+
+ 
 
 
 
@@ -572,17 +839,9 @@ body {
     }
 
     .header-content .search {
-        /* background: #2C4664;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.0967221);
-        border-radius: 1.5rem;
-        display: flex;*/
         flex-direction: row;
-        /* justify-content: space-between; */
         width: 100%;
         flex-wrap: wrap;
-        /*position: relative;
-         width: 90%;
-        z-index: 1; */
     }
 
     .header-content .search-wrap {
@@ -592,7 +851,6 @@ body {
 
     .search .search-item:not(:nth-child(4)) {
         border-right: 1px solid #21364E;
-        /* padding: 2rem 3rem; */
     }
 
     .search .search-item:nth-child(1),
@@ -609,9 +867,10 @@ body {
         width: 100%;
     }
 
+    /* facilities section */
+
     .facilities-section {
-        padding-top: 10rem;
-        /* padding-bottom: 5rem; */
+        padding-top: 10rem;    
     }
 
     .facilities-section .facilities-wrap {
@@ -619,6 +878,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .facilities-wrap .facilities {
         display: flex;
         flex-direction: column;
@@ -638,28 +898,17 @@ body {
         max-width: 570px;
     }
 
-    
-
-    
+    .facilities-wrap .wellness-and-spa-img-wrap {
+        margin-bottom: 0;
+    } 
 
     .facilities-img-wrap .facilities-card {
-        /* border-radius: 15px;
-        box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 4;
-        position: absolute; */
         right: -20px;
         bottom: 110px;
-        /* background-color: #FFFFFF;
-        height: 224px;
-        width: 224px; */
+        
     }
+}
     
- }
-
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
      
@@ -679,10 +928,75 @@ body {
 
     .search .search-item:not(:nth-child(4)) {
         border-bottom: none;
-
+    }
     
 }
 
-
  /* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {  }
+@media only screen and (min-width: 1200px)  {
+    .advantages-section .advantages-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+
+    .advantages-wrapper .advantages-wrap {
+        flex-basis: 50%;
+    }
+
+    .advantages-wrap .advantages-title {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .advantages-wrap .advantages-group {
+        display: flex;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .advantages-group .advantages-subgroup-wrap {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .advantages-subgroup-wrap .advantages-subgroup {
+        flex-basis: 50%;
+    }
+
+    .advantages-group .advantages-events-wrap {
+        /* align-items: center; */
+        /* position: relative; */
+        border-radius: 30px;
+        display: flex;
+        height: 224px;
+        /* justify-content: flex-start; */
+        flex-direction: row;
+        flex-basis: 100%;
+        background: #FFFFFF;
+        box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+        max-width: 572px;
+        /* padding: 3rem; */
+        /* padding: 1rem 2rem 0rem 3rem; */
+        border: 1px solid green;
+        margin-top: 0;
+    }
+
+    .advantages-events-wrap .advantages-group-title:first-of-type {
+        padding-top: 0.7rem;
+    }
+
+    .advantages-events-wrap .advantages-group-icon {
+        margin-right: 4rem;
+    }
+
+    .advantages-subgroup-wrap .advantages-subgroup { 
+        max-width: 270px;
+    }
+
+
+    
+}    
